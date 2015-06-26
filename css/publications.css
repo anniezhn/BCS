@@ -1,0 +1,34 @@
+body{
+
+	font-family: 'Quattrocento Sans', sans-serif !important;
+
+}
+
+.listing {
+	display: none;
+}
+.last{
+	margin-bottom: 50px;
+}
+.icon{
+	height: 90px;
+	margin-left: 21px;
+	padding-top: 3px;
+	margin-top: 2px;
+	width: 135px;
+
+}
+.icon:hover{
+	cursor: pointer;
+}
+.listing li{
+	background-image: none;
+	padding-bottom: 10px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 300;
+}
+ul{    
+	list-style-type: none;
+}

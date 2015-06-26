@@ -1,0 +1,19 @@
+body{
+
+	font-family: 'Quattrocento Sans', sans-serif !important;
+
+}
+
+.icon{
+	height: 72px;
+	margin-left: 35px;
+	padding-top: 3px;
+	margin-top: 2px;
+	width: 105px;
+}
+.icon:hover{
+	cursor: pointer;
+}
+.title{
+	font-size: 14px !important;
+}

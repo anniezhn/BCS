@@ -1,0 +1,65 @@
+body{
+	color: #0F1326 !important;
+
+	font-family: 'Quattrocento Sans', sans-serif !important;
+
+}
+
+h2{
+	width: 500px;
+	padding: 25px;
+	margin: 25px;
+}
+#people-grid{
+    margin-top: 60px;
+    margin-left: 70px;
+
+}
+
+#people-center{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.person{
+	width: 50%;
+	height: 260px;
+	float:left;
+
+}
+.headshot{
+	height: 180px;
+	width: 220px;
+	float: left;
+	border-radius: 2px;
+	overflow: hidden;
+	object-fit:cover;
+}
+
+/*
+.headshot-center{
+	height: 180px;
+	width: 220px;
+	border-radius: 2px;
+	overflow: hidden;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	object-fit:cover;
+}
+*/
+.info{
+	margin-top: 50px;
+	word-wrap: break-word;
+	margin-left: 250px;
+	line-height: 1.2;
+	padding-right: 40px;
+}
+
+.info-names{
+	margin-top: 50px;
+	word-wrap: break-word;
+	margin-left: 70px;
+	line-height: 1.2;
+}

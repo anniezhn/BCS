@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+<title>KurTan Lab</title>
+<link rel="stylesheet" type="text/css" href="../css/home.css">
+<link rel="stylesheet" type="text/css" href="../css/projects.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/sidebar.css">
+<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+         <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="/index.html">
+                        KurTan Lab
+                    </a>
+                </li>
+                <li>
+                    <a href="people.html">People</a>
+                </li>
+                <li>
+                    <a href="publications.html">Publications</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="lab_meetings.html">Lab Meetings</a>
+                </li>
+                <li>
+                    <a href="history.html">History</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        
+        <div id="page-content-wrapper">
+         
+            <div id="grid">
+ 
+                <div class="grid-element top-left">
+                    <img class="icon" id="people" src="../img/icons/Prosody2_sunflower-clear_long.png" data-toggle="popover" tabindex="50" data-placement="left" data-content="We know that context can have a huge impact on how speakers use intonation, but it is not well understood which of these factors matter when in the production of intonation. To address this question, we have collected a small corpus composed of pairs of participants working together to complete a card game based on the Enterprises Inc. game called SET.  By controlling the information each participant has access to, we can reasonably determine the likely intention behind a particular speaker’s utterance and investigate how features of the discourse, along with syntax and lexical choices, affect that speaker’s use of intonation.">
+                    <label class="title">Intonation in an interactive dialog (SET)</label>
+                </div>
+
+                <div class="grid-element">
+                   
+                </div>
+
+                <div class="grid-element third top-right">
+                    <img class = "icon" id="publications" src="../img/icons/Prosody2_sunflower-clear_long.png" data-toggle="popover" tabindex="50" data-placement="right" data-content="A fair amount of research has successfully investigated how pitch accents (pitch excursions tied to the stressed syllable of a word) facilitate online language processing, but comparatively little research has looked at boundary tones (pitch excursions aligned to the end of phrases).  We developed a targeted language game with eye-tracking that allowed us to tie particular intentions (asking vs telling), as signaled by different boundary tones, to specific moves in a game, and consequently different fixation patterns.  We find that participants rapidly integrate the information conveyed by the boundary tones while also taking into account the lexical choices of the speaker. We are now working towards understanding when precisely in the acoustic signal listeners are able to identify the upcoming boundary tone, as opposed to the nuclear pitch accent.">
+                    <label class="title">Online processing of boundary tones</label>
+                </div>
+
+
+                <div class="grid-element">
+                    
+                </div>
+
+                <div class="grid-element">
+                    <img class = "icon" id="projects" src="../img/users.png"/ data-toggle="popover" tabindex="50" data-placement="bottom" data-content="hey there this is a project">
+                    <label class="title">Project C</label>
+                </div>
+
+                <div class="grid-element third">
+                    
+                </div>
+
+
+                <div class="grid-element last bottom-left">
+                    <img class = "icon" id="contact" src="../img/users.png"/ data-toggle="popover" tabindex="50" data-placement="left" data-content="hey there this is a project">
+                    <label class="title">Project D</label>
+                </div>
+
+                <div class="grid-element last">
+                   
+                </div>
+
+                <div class="grid-element third last bottom-right">
+                    <img class = "icon" id="lab_meetings" src="../img/users.png"/ data-toggle="popover" tabindex="50" data-placement="right" data-content="hey there this is a project">
+                    <label class="title">Project E</label>
+                </div>
+            </div>
+         
+            <div class="clear"></div>
+     </div>
+    
+    </div>
+
+
+
+<!-- jQuery Version 1.11.0 -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+
+$(function(){
+   $('[data-toggle=popover]').popover({
+          trigger: 'hover',
+          html: true,
+    }) 
+});
+</script>
+
+</body>
+</html>
+
+

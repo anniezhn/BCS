@@ -1,0 +1,46 @@
+body{
+
+	font-family: 'Quattrocento Sans', sans-serif !important;
+
+}
+#grid-calendar{
+    width: 536px;
+    margin: auto;
+    margin-top: 30px;
+}
+h1{
+	text-align: center;
+}
+p{
+	line-height: 1;
+	padding-top: 15px;
+}
+.grid-element{
+	text-align: center;
+}
+.sectionHead{
+  text-align: center;
+  font-size: 40px;
+  padding-top: 40px;
+}
+.sectionHead:hover{
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: bold;
+	color:#485EB5;
+}
+
+#description{
+	margin-top: 100px;
+	width: 700px;
+	font-size: 19px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: justify;
+}
+.first{
+	margin-top: 70px;
+}
+#m2014, #m2015{
+	display: none;
+}

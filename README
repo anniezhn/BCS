@@ -1,0 +1,30 @@
+README	
+
+INTRO
+This project was written with the intention for non-coders to be able to add/remove various divs and such to contribute new material to the site. Thus everything is done in an overly simplistic and readable manner, although rather unmodular and basic. The design and structure of the project was geared towards the RAs working in the lab to simply be able to copy/paste divs for each new link, and then reupload the code to the server. If any student with a background in web development will be taking on this role to add new material, it should be extremely simple. The entire site was designed with a grid theme, which is a play on the type of work they do in the lab. Pretty much every page has a grid at the top with links or information, with all 9 corners of the grid very clearly labeled by their classnames. 
+
+INDEX.HTML
+The index page won't likely change at all, but it contains a grid followed by a brief synopsis of the work the lab does.
+
+PAGES FOLDER
+In the pages folder, there are plain HTML files that correspond to each of the pages on the site. Included at the top of each of the pages is the code for the nav-bar. 
+
+PEOPLE.HTML
+This page includes all of the headshots and bios for each of the people working in the lab. 
+To add a new person, simply copy and paste the code for one div with the class "person". Then change the src for the photo for the headshot, put their bio in the data-content section, and change each of the <p> tags below, which correspond to the name, title, and email address. The images for the headshots are in the img folder, in their own folder called headshots. Very straight forward. That is pretty much the only maintenance that will be done on this page. 
+
+CONTACT.HTML
+This page has all of the contact info for the lab. At the present time, they were unsure as to what they wanted under the apply and participation sections. When a user clicks on the apply section, a download for a blank word document begins. Eventually, that document will have content and the assumption was that an applicant would fill out the application and email it back in to the email address listed on the site/application itself. The participation section is currently blank, so at some point, whoever is maintaining the site should add either a pop up form that participants can fill out and submit, or a document download similar to the application. Other than that, this page is static. 
+
+HISTORY.HTML
+This page is pretty much blank, and is listed as being under construction. Chigusa wanted someone to write a bio about the history of how the lab came to be, and once that is completed, the text should be copied in to this page. 
+
+PROJECTS.HTML
+There is a grid here that is intended to hold 5-9 projects that the lab is currently working on. The icon of the project should correspond to the type of project it is. The icons are held in the img folder, with their own icon folder within. When a new project is being added to the site, the primary person working on the project should submit a concise name and explanation, and which category it falls under. The 5 categories can be found on the publications page with names and icons clearly displayed. To add a new project, simply copy and of the divs currently containing projects, change the label to the new title, the src to the icon of whichever category it falls under, and the data-content to the summary of the project. Again, very simple and straightforward. 
+
+PUBLICATIONS.HTML
+This crux of what whoever is maintaining this site will need to be working on. There are a lot of publications that need to be added, and that will continuously need to be updated as articles are approved and published. 
+The publications are sorted into 5 categories, and when a user clicks on any of the 5 categories, the list of publications relating to that category appears underneath the grid. The PDFs of the articles themselves are kept in the articles folder. To add a new article under a given listing, simply add a new <li> with the citation. For the articles with PDFs associated with them on the site, simply add an <a> tag at the front of the <li>, there are a lot of examples for syntax purposes. The publications should be added in chronological order with the newest at the top. Down the line when there are a lot of articles added to this site, there was interest expressed about also offering a chronological sorting by year, so instead of just a sorting by category, a user could click 2014 for example, and all articles published in 2014 would appear, not just those in a specific category. The infrastructure and javascript to add that functionality are pretty much all there, a new listing would just be added under the grid for each year, and onclick the articles would appear. In the meantime, I am fairly sure that all that is needed is for new articles to be added under their section headers, which again is very straightforward. 
+
+LAB_MEETINGS.HTML
+The entire lab meetings page is one big game of copy/paste. The 2014 page is currently the only live section, and there is basically just one grid for each month, with the Mondays of each month (this is when the meetings take place) being the active content of the grid. Each date has a label (with the numerical date contained within), followed by a <p> tag with the name of the person in charge of the presentation. Then there is an <a> tag with a link to the internal wiki with links to the slides and other resources for the presentation. The structure of this page should be fairly simple to duplicate for 2015. 
