@@ -17,10 +17,9 @@ h2{
 }
 
 #people-center{
-    margin-left: auto;
-    margin-right: auto;
-
+    margin-top: 60px;
 }
+
 
 .person{
 	width: 50%;
@@ -28,6 +27,12 @@ h2{
 	float:left;
 
 }
+
+.person-center{
+	width: 50%
+	height: 260px;
+}
+
 .headshot{
 	height: 180px;
 	width: 220px;
@@ -37,24 +42,32 @@ h2{
 	object-fit:cover;
 }
 
-/*
 .headshot-center{
 	height: 180px;
 	width: 220px;
 	border-radius: 2px;
 	overflow: hidden;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	object-fit:cover;
+	/*margin: 0 auto;*/
+	margin-left: 350px;
+	float: left;
+	object-fit: cover;
 }
-*/
+
 .info{
 	margin-top: 50px;
 	word-wrap: break-word;
 	margin-left: 250px;
 	line-height: 1.2;
 	padding-right: 40px;
+}
+
+.info-center{
+	margin-top: 50px;
+	word-wrap: break-word;
+	line-height: 1.2;
+	padding-right: 40px;
+	margin-left: 600px;
 }
 
 .info-names{
