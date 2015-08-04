@@ -17,3 +17,8 @@ body{
 .title{
 	font-size: 14px !important;
 }
+
+.popover-content {
+   height: 150px;
+   overflow-y: scroll;
+}

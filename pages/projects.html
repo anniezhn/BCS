@@ -19,7 +19,7 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="/index.html">
+                    <a href="../index.html">
                         KurTan Lab
                     </a>
                 </li>
@@ -39,6 +39,9 @@
                     <a href="lab_meetings.html">Lab Meetings</a>
                 </li>
                 <li>
+                    <a href="news.html">News</a>
+                </li>
+                <li>
                     <a href="history.html">History</a>
                 </li>
             </ul>
@@ -50,7 +53,7 @@
             <div id="grid">
  
                 <div class="grid-element top-left">
-                    <img class="icon" id="people" src="../img/icons/Prosody2_sunflower-clear_long.png" data-toggle="popover" tabindex="50" data-placement="left" data-content="We know that context can have a huge impact on how speakers use intonation, but it is not well understood which of these factors matter when in the production of intonation. To address this question, we have collected a small corpus composed of pairs of participants working together to complete a card game based on the Enterprises Inc. game called SET.  By controlling the information each participant has access to, we can reasonably determine the likely intention behind a particular speaker’s utterance and investigate how features of the discourse, along with syntax and lexical choices, affect that speaker’s use of intonation.">
+                    <img class="icon" id="people" src="../img/icons/Prosody2_sunflower-clear_long.png" data-toggle="popover" tabindex="50" data-placement="left" data-content="We know that context can have a huge impact on how speakers use intonation, but it is not well understood which of these factors matter when in the production of intonation. To address this question, we have collected a small corpus composed of pairs of participants working together to complete a card game based on the Enterprises Inc. game called SET.  By controlling the information each participant has access to, we can reasonably determine the likely intention behind a particular speaker's utterance and investigate how features of the discourse, along with syntax and lexical choices, affect that speaker's use of intonation.">
                     <label class="title">Intonation in an interactive dialog (SET)</label>
                 </div>
 
@@ -118,7 +121,7 @@ $("#menu-toggle").click(function(e) {
 
 $(function(){
    $('[data-toggle=popover]').popover({
-          trigger: 'hover',
+          trigger: 'click',
           html: true,
     }) 
 });
