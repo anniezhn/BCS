@@ -7,8 +7,59 @@
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
 <body>
-	<!-- <div class="page-header"><img class ="header-img" src ="img/CrystalCusimano-Figueroa_cloudsRR.jpg"/></div> -->
-	<div class ="content">
+
+	<!-- jQuery Version 1.11.0 -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- JavaScript for Slider -->
+	<script type="text/javascript" src="../bootstrap/js/jssor.slider.mini.js"></script>
+	<script>
+			jQuery(document).ready(function($)){
+			var options = {
+				$ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,
+                    $ChanceToShow: 1,
+                }   
+			};
+        	var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+		};
+	</script>
+
+
+	<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 100%; height: 350px; overflow:hidden;">
+    <!-- Slides Container -->
+    <div u="slides" style="position: absolute; overflow: hidden; left: 0px; top: 0px; width: 100%; height: 350px;">
+    	<div><img u="image" src="img/headers/JuliaYurkovic_RushRheesRainbow.jpg" /></div>
+        <div><img u="image" src="img/headers/CrystalCusimano-Figueroa_cloudsRR.jpg" /></div>
+    </div>
+        <!--#region Arrow Navigator Skin Begin -->
+        <style>
+            .jssora21l, .jssora21r {
+                display: block;
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                background: url(img/a21.png) center center no-repeat;
+                overflow: hidden;
+            }
+            .jssora21l { background-position: -3px -33px; }
+            .jssora21r { background-position: -63px -33px; }
+            .jssora21l:hover { background-position: -123px -33px; }
+            .jssora21r:hover { background-position: -183px -33px; }
+            .jssora21l.jssora21ldn { background-position: -243px -33px; }
+            .jssora21r.jssora21rdn { background-position: -303px -33px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
+        </span>
+        <!--#endregion Arrow Navigator Skin End -->
+    </div>
+	<!-- Jssor Slider End -->
+
+
 	<div id="grid" style="margin-top:20px !important;">
  
 		<div class="grid-element top-left">
@@ -50,8 +101,8 @@
 		</div>
 
 		<div class="grid-element third last bottom-right">
-		    <img class = "icon" id="lab_meetings" src="img/icons/meetings.png"/>
-		    <label class="title">Lab Meetings</label>
+		    <img class = "icon" id="news" src="img/icons/meetings.png"/>
+		    <label class="title">News</label>
 		</div>
 	</div>
  
@@ -64,25 +115,21 @@
 	    margin-right: auto;
 	    margin-left: auto;
 	    font-size:14px;">Kurumada-Tanenhaus (KurTan) Lab is run by members of MTan Lab and Rochester Kinder Lab. Our goal is to understand language comprehension and production with special attention to how language users process multiple sources of information online. Comprehenders need to detect and analyze multiple levels of linguistic representations (e.g., sounds, words, grammar and discourse) while integrating information about the context, the speaker, and the content of the utterance so that they can plan and produce their responses in a timely manner. </p>
-	</div class ="content">
+
 	<div class="footer">Tanenhaus Lab - Meliora Hall room 415<span class="one">Kinder Lab - Meliora Hall room 424  <span class="one">University of Rochester</span> <span class="one">Rochester, NY</span> <img class ="logo" src="img/icons/URLogo.png"/></div>
-
-	<!-- jQuery Version 1.11.0 -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="../bootstrap/js/bootstrap.min.js"></script>
 
-	
-	<script>
-		var images = document.getElementsByTagName("img");
-		for(var i = 0; i < images.length; i++) {
-		    var image = images[i];
-		    image.onclick = function(event) {
-		         window.location.href = 'pages/' + this.id + '.html';
-		    };
-		}
+  	<script>
+        	var images = document.getElementsByClassName("icon");
+			for(var i = 0; i < images.length; i++) {
+		    	var image = images[i];
+		    	image.onclick = function(event) {
+		        	window.location.href = 'pages/' + this.id + '.html';
+		    	};
+			}
+
 	</script>
 </body>
 
