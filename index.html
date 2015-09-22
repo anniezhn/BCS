@@ -17,7 +17,8 @@
 			var options = {
 				$ArrowNavigatorOptions: {
                     $Class: $JssorArrowNavigator$,
-                    $ChanceToShow: 1,
+                    $FillMode:2,
+                    $AutoPlay: true,
                 }   
 			};
         	var jssor_slider1 = new $JssorSlider$('slider1_container', options);
@@ -26,6 +27,15 @@
 
 
 	<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 100%; height: 350px; overflow:hidden;">
+	<!-- Loading Screen -->
+    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+        <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+            top: 0px; left: 0px; width: 100%; height: 100%;">
+        </div>
+        <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+            top: 0px; left: 0px; width: 100%; height: 100%;">
+        </div>
+    </div>
     <!-- Slides Container -->
     <div u="slides" style="position: absolute; overflow: hidden; left: 0px; top: 0px; width: 100%; height: 350px;">
     	<div><img u="image" src="img/headers/JuliaYurkovic_RushRheesRainbow.jpg" /></div>
