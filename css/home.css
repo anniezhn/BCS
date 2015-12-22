@@ -96,14 +96,14 @@ label.title{
 	float: right;
 }
 .header{
-	padding-bottom: 350px;
+	padding-bottom: 450px;
 }
 .header-img{
 	position: absolute;
 	overflow: hidden;
 	left: 0px;
 	top: 0px;
+	height: 450px;
 	width: 100%;
-	height: 350px;
 	/*background-size: contain; */
 }
